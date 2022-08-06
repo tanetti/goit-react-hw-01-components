@@ -1,25 +1,14 @@
-import { Profile } from './Profile/Profile';
-import usersData from 'data/users.json';
-import { Box } from './Shared/Box';
+import { PageTitle } from './PageTitle/PageTitle';
+import { UserProfilesSection } from './UserProfilesSection/UserProfilesSection';
+import { StatisticsSection } from './StatisticsSection/StatisticsSection';
+import { Box } from './Shared';
 
 export const App = () => {
   return (
     <Box as="main">
-      <Box as="section" py={5} bg="darkBG">
-        <Box
-          as="ul"
-          display="flex"
-          justifyContent="center"
-          flexWrap="wrap"
-          gridGap={5}
-          m={0}
-          p={0}
-        >
-          {usersData.map(user => (
-            <Profile key={user.username} userData={user} />
-          ))}
-        </Box>
-      </Box>
+      <PageTitle text="GoIT React HW 01 (Components)" />
+      <UserProfilesSection caption="User profiles" />
+      <StatisticsSection caption="Statistics" />
     </Box>
   );
 };
