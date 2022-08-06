@@ -1,0 +1,35 @@
+[
+  {
+    "username": "Jacques Gluke",
+    "tag": "jgluke",
+    "location": "Ocho Rios, Jamaica",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 5603,
+      "views": 4827,
+      "likes": 1308
+    }
+  },
+  {
+    "username": "Boba Fett",
+    "tag": "bobaf",
+    "location": "Tusken village, Tatooine",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 45654,
+      "views": 789,
+      "likes": 4566
+    }
+  },
+  {
+    "username": "Han Solo",
+    "tag": "iLoveChewbacca",
+    "location": "Chafala, Naboo",
+    "avatar": "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    "stats": {
+      "followers": 4894874,
+      "views": 89445,
+      "likes": 4445645
+    }
+  }
+]

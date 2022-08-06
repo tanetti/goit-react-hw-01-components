@@ -1,16 +1,25 @@
+import { Profile } from './Profile/Profile';
+import usersData from 'data/users.json';
+import { Box } from './Shared/Box';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Box as="main">
+      <Box as="section" py={5} bg="darkBG">
+        <Box
+          as="ul"
+          display="flex"
+          justifyContent="center"
+          flexWrap="wrap"
+          gridGap={5}
+          m={0}
+          p={0}
+        >
+          {usersData.map(user => (
+            <Profile key={user.username} userData={user} />
+          ))}
+        </Box>
+      </Box>
+    </Box>
   );
 };
