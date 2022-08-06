@@ -3,7 +3,7 @@ import friendsData from 'data/friends.json';
 import { Box, Text } from 'components/Shared';
 import { FriendsList } from './FriendList/FriendsList';
 
-export const FriendsSection = ({ caption }) => {
+export const FriendListSection = ({ caption }) => {
   return (
     <Box as="section" py={5} bg="darkBG">
       <Text
@@ -21,6 +21,6 @@ export const FriendsSection = ({ caption }) => {
   );
 };
 
-FriendsSection.propTypes = {
+FriendListSection.propTypes = {
   caption: PropTypes.string.isRequired,
 };

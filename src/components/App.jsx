@@ -1,7 +1,7 @@
 import { PageTitle } from './PageTitle/PageTitle';
 import { UserProfilesSection } from './UserProfilesSection/UserProfilesSection';
 import { StatisticsSection } from './StatisticsSection/StatisticsSection';
-import { FriendsSection } from './FriendsSection/FriendsSection';
+import { FriendListSection } from './FriendListSection/FriendListSection';
 import { Box } from './Shared';
 
 export const App = () => {
@@ -10,7 +10,7 @@ export const App = () => {
       <PageTitle text="GoIT React HW 01 (Components)" />
       <UserProfilesSection caption="User profiles" />
       <StatisticsSection caption="Statistics" />
-      <FriendsSection caption="Friends" />
+      <FriendListSection caption="Friend list" />
     </Box>
   );
 };
