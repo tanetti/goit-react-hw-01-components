@@ -3,15 +3,22 @@ export const theme = Object.freeze({
     darkText: '#212121',
     lightText: '#8e8e8e',
     whiteText: '#fff',
+
     darkBG: '#ccc',
     lightBG: '#eee',
     whiteBG: '#fff',
+
+    online: '#37ed2d',
+    offline: '#ed4040',
   },
   space: [0, '2px', '4px', '8px', '16px', '32px', '64px', '128px', '256px'],
   sizes: {
     avatarImage: '140px',
     profileWidth: '300px',
     statItemMin: '60px',
+    statusFriend: '16px',
+    avatarFriend: '80px',
+    friendListItemMin: '300px',
   },
   fontSizes: {
     xs: '12px',

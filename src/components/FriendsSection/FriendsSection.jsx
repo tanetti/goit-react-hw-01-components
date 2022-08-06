@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
+import friendsData from 'data/friends.json';
 import { Box, Text } from 'components/Shared';
-import statisticsData from 'data/statistics.json';
-import { Statistics } from './Statistics/Statistics';
+import { FriendsList } from './FriendList/FriendsList';
 
-export const StatisticsSection = ({ caption }) => {
+export const FriendsSection = ({ caption }) => {
   return (
-    <Box as="section" py={5} bg="lightBG">
+    <Box as="section" py={5} bg="darkBG">
       <Text
         as="h2"
         m={0}
@@ -16,11 +16,11 @@ export const StatisticsSection = ({ caption }) => {
       >
         {caption}
       </Text>
-      <Statistics title="Upload stats" stats={statisticsData} />
+      <FriendsList friendsData={friendsData} />
     </Box>
   );
 };
 
-StatisticsSection.propTypes = {
+FriendsSection.propTypes = {
   caption: PropTypes.string.isRequired,
 };

@@ -14,7 +14,7 @@ export const Statistics = ({ title, stats }) => {
         boxShadow="generic"
       >
         {title && (
-          <Text as="h3" p={4} fontSize="l" textAlign="center">
+          <Text as="h3" p={4} fontSize="l" textAlign="center" color="darkText">
             {title.toUpperCase()}
           </Text>
         )}
