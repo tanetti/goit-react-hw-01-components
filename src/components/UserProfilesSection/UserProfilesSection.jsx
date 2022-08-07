@@ -25,8 +25,15 @@ export const UserProfilesSection = ({ caption }) => {
         m={0}
         p={0}
       >
-        {usersData.map(user => (
-          <Profile key={user.username} userData={user} />
+        {usersData.map(({ username, tag, location, avatar, stats }) => (
+          <Profile
+            key={username}
+            userName={username}
+            tag={tag}
+            location={location}
+            avatar={avatar}
+            stats={stats}
+          />
         ))}
       </Box>
     </Box>

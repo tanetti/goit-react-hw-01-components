@@ -3,9 +3,7 @@ import { Stat } from './Stat/Stat';
 import { Box, Text } from 'components/Shared';
 import { AvatarImage } from './Profile.styled';
 
-export const Profile = ({ userData }) => {
-  const { username, tag, location, avatar, stats } = userData;
-
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <Box
       as="li"
