@@ -1,26 +1,19 @@
 import PropTypes from 'prop-types';
 import transactionsData from 'data/transactions.json';
-import { Box, Text } from 'components/Shared';
-import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+import { Section, Container, SectionTitle } from 'components/Shared';
+import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 
-export const TransactionHistorySection = ({ caption }) => {
+export const TransactionHistorySection = ({ title }) => {
   return (
-    <Box as="section" py={5} bg="lightBG">
-      <Text
-        as="h2"
-        m={0}
-        mb={5}
-        fontSize="xxl"
-        textAlign="center"
-        color="darkText"
-      >
-        {caption}
-      </Text>
-      <TransactionHistory transactionsData={transactionsData} />
-    </Box>
+    <Section>
+      <Container>
+        <SectionTitle>{title}</SectionTitle>
+        <TransactionHistory transactionsData={transactionsData} />
+      </Container>
+    </Section>
   );
 };
 
 TransactionHistorySection.propTypes = {
-  caption: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 };

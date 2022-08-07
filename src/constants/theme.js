@@ -4,7 +4,7 @@ export const theme = Object.freeze({
     lightText: '#6e6e6e',
     whiteText: '#fff',
 
-    darkBG: '#ccc',
+    darkBG: '#ddd',
     lightBG: '#eee',
     whiteBG: '#fff',
 
@@ -16,12 +16,13 @@ export const theme = Object.freeze({
   space: [0, '2px', '4px', '8px', '16px', '32px', '64px', '128px', '256px'],
   sizes: {
     avatarImage: '140px',
-    profileWidth: '300px',
+    profileWidth: '290px',
     statItemMin: '60px',
-    statusFriend: '16px',
-    avatarFriend: '80px',
-    friendListItemMin: '300px',
-    tableTdMin: '180px',
+    statusFriend: '14px',
+    avatarFriend: '70px',
+    friendListItem: '250px',
+    tableMin: '250px',
+    tableMax: '600px',
   },
   fontSizes: {
     xs: '12px',
@@ -48,5 +49,14 @@ export const theme = Object.freeze({
     generic:
       '0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16)',
     text: '0px 0px 10px rgba(0, 0, 0, 1)',
+  },
+  breakPoints: {
+    midMin: '480px',
+    midMax: '767.98px',
+    tabletMin: '768px',
+    tabletMax: '1279.98px',
+    desktopMin: '1280px',
+    desctopMax: '1679.98px',
+    bigMin: '1680px',
   },
 });

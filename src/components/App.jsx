@@ -3,16 +3,16 @@ import { UserProfilesSection } from './UserProfilesSection/UserProfilesSection';
 import { StatisticsSection } from './StatisticsSection/StatisticsSection';
 import { FriendListSection } from './FriendListSection/FriendListSection';
 import { TransactionHistorySection } from './TransactionHistorySection/TransactionHistorySection';
-import { Box } from './Shared';
 
 export const App = () => {
   return (
-    <Box as="main">
+    <main>
       <PageTitle text="GoIT React HW 01 (Components)" />
-      <UserProfilesSection caption="User profiles" />
-      <StatisticsSection caption="Statistics" />
-      <FriendListSection caption="Friend list" />
-      <TransactionHistorySection caption="Transaction history" />
-    </Box>
+
+      <UserProfilesSection title="User profiles" />
+      <StatisticsSection title="Statistics" />
+      <FriendListSection title="Friend list" />
+      <TransactionHistorySection title="Transaction history" />
+    </main>
   );
 };
