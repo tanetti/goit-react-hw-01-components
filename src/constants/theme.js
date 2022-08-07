@@ -1,7 +1,7 @@
 export const theme = Object.freeze({
   colors: {
     darkText: '#212121',
-    lightText: '#8e8e8e',
+    lightText: '#6e6e6e',
     whiteText: '#fff',
 
     darkBG: '#ccc',
@@ -10,6 +10,8 @@ export const theme = Object.freeze({
 
     online: '#37ed2d',
     offline: '#ed4040',
+
+    tableHeadBG: '#32cae5',
   },
   space: [0, '2px', '4px', '8px', '16px', '32px', '64px', '128px', '256px'],
   sizes: {
@@ -19,6 +21,7 @@ export const theme = Object.freeze({
     statusFriend: '16px',
     avatarFriend: '80px',
     friendListItemMin: '300px',
+    tableTdMin: '180px',
   },
   fontSizes: {
     xs: '12px',
